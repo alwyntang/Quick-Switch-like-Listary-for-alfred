@@ -8,3 +8,6 @@ Just download [workflow](https://github.com/alwyntang/Quick-Switch-like-Listary-
 It works in two ways：
 + Type the keyword `qsc`
 + Use shortcut `ctrl + g`
+
+### Thanks
+You can find the apple script used in the workflow from [here](https://www.v2ex.com/t/738022). 
