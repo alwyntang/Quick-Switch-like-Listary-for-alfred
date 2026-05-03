@@ -1,0 +1,20 @@
+tell application "System Events" to set frontmostProcess to first process where it is frontmost
+tell application "Finder"
+  if exists Finder window 1 then
+    set currentDir to target of Finder window 1 as alias
+  else
+    set currentDir to desktop as alias
+  end if
+end tell
+
+set the clipboard to POSIX path of currentDir
+
+tell application (path to frontmost application as text) to activate
+  delay 0.2
+tell application "System Events"
+  keystroke "g" using {command down, shift down}
+  delay 0.2
+  keystroke "v" using {command down}
+  delay 0.2
+  keystroke return
+end tell
